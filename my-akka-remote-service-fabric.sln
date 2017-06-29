@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "my_akka_remote_service_fabric", "my-akka-remote-service-fabric\my_akka_remote_service_fabric.sfproj", "{11A74E37-6C67-4149-AEC6-3C10BD62B045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStatelessGreeter", "MyStatelessGreeter\MyStatelessGreeter.csproj", "{4E4AC0F9-4154-41B3-B07B-F2BD5DCA9E57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{63A6C0A4-F048-4368-9740-0E02B6AA5CC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStatelessGreetee", "MyStatelessGreetee\MyStatelessGreetee.csproj", "{B616A0C2-E06F-4A34-84E1-639A0C852FA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11A74E37-6C67-4149-AEC6-3C10BD62B045}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{11A74E37-6C67-4149-AEC6-3C10BD62B045}.Debug|x64.ActiveCfg = Debug|x64
+		{11A74E37-6C67-4149-AEC6-3C10BD62B045}.Debug|x64.Build.0 = Debug|x64
+		{11A74E37-6C67-4149-AEC6-3C10BD62B045}.Debug|x64.Deploy.0 = Debug|x64
+		{11A74E37-6C67-4149-AEC6-3C10BD62B045}.Release|Any CPU.ActiveCfg = Release|x64
+		{11A74E37-6C67-4149-AEC6-3C10BD62B045}.Release|x64.ActiveCfg = Release|x64
+		{11A74E37-6C67-4149-AEC6-3C10BD62B045}.Release|x64.Build.0 = Release|x64
+		{11A74E37-6C67-4149-AEC6-3C10BD62B045}.Release|x64.Deploy.0 = Release|x64
+		{4E4AC0F9-4154-41B3-B07B-F2BD5DCA9E57}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{4E4AC0F9-4154-41B3-B07B-F2BD5DCA9E57}.Debug|x64.ActiveCfg = Debug|x64
+		{4E4AC0F9-4154-41B3-B07B-F2BD5DCA9E57}.Debug|x64.Build.0 = Debug|x64
+		{4E4AC0F9-4154-41B3-B07B-F2BD5DCA9E57}.Release|Any CPU.ActiveCfg = Release|x64
+		{4E4AC0F9-4154-41B3-B07B-F2BD5DCA9E57}.Release|x64.ActiveCfg = Release|x64
+		{4E4AC0F9-4154-41B3-B07B-F2BD5DCA9E57}.Release|x64.Build.0 = Release|x64
+		{63A6C0A4-F048-4368-9740-0E02B6AA5CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A6C0A4-F048-4368-9740-0E02B6AA5CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A6C0A4-F048-4368-9740-0E02B6AA5CC8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{63A6C0A4-F048-4368-9740-0E02B6AA5CC8}.Debug|x64.Build.0 = Debug|Any CPU
+		{63A6C0A4-F048-4368-9740-0E02B6AA5CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A6C0A4-F048-4368-9740-0E02B6AA5CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A6C0A4-F048-4368-9740-0E02B6AA5CC8}.Release|x64.ActiveCfg = Release|Any CPU
+		{63A6C0A4-F048-4368-9740-0E02B6AA5CC8}.Release|x64.Build.0 = Release|Any CPU
+		{B616A0C2-E06F-4A34-84E1-639A0C852FA7}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{B616A0C2-E06F-4A34-84E1-639A0C852FA7}.Debug|x64.ActiveCfg = Debug|x64
+		{B616A0C2-E06F-4A34-84E1-639A0C852FA7}.Debug|x64.Build.0 = Debug|x64
+		{B616A0C2-E06F-4A34-84E1-639A0C852FA7}.Release|Any CPU.ActiveCfg = Release|x64
+		{B616A0C2-E06F-4A34-84E1-639A0C852FA7}.Release|x64.ActiveCfg = Release|x64
+		{B616A0C2-E06F-4A34-84E1-639A0C852FA7}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
