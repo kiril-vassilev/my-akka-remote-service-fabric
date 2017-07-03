@@ -14,14 +14,14 @@ namespace MyStatelessGreeter
 {
     public class MyCommunicationListener : ICommunicationListener
     {
-        private const string EndpointSetting = @"
+        private const string AkkaSection = @"
                 akka {
                     actor.provider = ""Akka.Remote.RemoteActorRefProvider, Akka.Remote""
 
                     remote {
-                        helios.{protocol} {
-                            port = {port}
-                            hostname = {hostname}
+                        helios.tcp {
+                            port = 0
+                            hostname = localhost
                         }
                     }
                 }";
@@ -43,13 +43,10 @@ namespace MyStatelessGreeter
             var endpoint = _context.CodePackageActivationContext.GetEndpoint("ServiceEndpoint");
 
 
-            var configString = EndpointSetting
-                .Replace("{protocol}", endpoint.Protocol.ToString().ToLower())
-                .Replace("{port}", endpoint.Port.ToString())
-                .Replace("{hostname}", _context.NodeContext.IPAddressOrFQDN);
-
-
-            var config = ConfigurationFactory.ParseString(configString);
+            var config = ConfigurationFactory
+                .ParseString("akka.remote.helios.tcp.port=" + endpoint.Port)
+                .WithFallback("akka.remote.helios.tcp.hostname=" + _context.NodeContext.IPAddressOrFQDN)
+                .WithFallback(AkkaSection);
 
 
             _actorSystem = ActorSystem.Create("MyStatelessGreeter", config);
